@@ -1,0 +1,46 @@
+.banner {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  color: #fff;
+  margin: auto 1rem;
+  cursor: pointer;
+  font-size: 20px;
+}
+.nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 1rem;
+  position: relative;
+}
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500px;
+  cursor: pointer;
+  color: #fff;
+}
+.nav ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #fff;
+  transition: 0.2s ease-out;
+}
+.nav ul li a:hover::after {
+  width: 100%;
+}
+.nav ul li a:active::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #fff;
+}
